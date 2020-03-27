@@ -1,0 +1,14 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@vue/app",
+          {
+            "useBuiltIns": "entry"
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+steps:
+  - id: "BUILD"
+    name: "gcr.io/kaniko-project/executor"
+    args:
+      - --destination=gcr.io/$PROJECT_ID/APP_NAME:$COMMIT_SHA
+      - --cache=true
+      - --cache-ttl=12h
+  - id: "DEPLOY"
+    name: "gcr.io/cloud-builders/gcloud"
+    args:
+      - "beta"
+      - "run"
+      - "deploy"
+      - APP_NAME
+      - "--platform"
+      - "managed"
+      - "--project"
+      - "$PROJECT_ID"
+      - "--image"
+      - "gcr.io/$PROJECT_ID/APP_NAME:$COMMIT_SHA"
+      - "--region"
+      - "asia-northeast1"
+      - "--allow-unauthenticated"
+timeout: 900s

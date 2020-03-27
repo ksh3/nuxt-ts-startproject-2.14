@@ -1,0 +1,8 @@
+{
+  "translate": {
+    "scope": "Vue,javascript",
+    "prefix": "$t",
+    "body": ["this.$$t('$1')"],
+    "description": "translate tag"
+  }
+}

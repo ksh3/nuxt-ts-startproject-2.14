@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    "scope": "javascript,typescript,Vue",
+    "prefix": "trans",
+    "body": ["{{ $$t('$1') }}"],
+    "description": "tag"
+  }
+}
