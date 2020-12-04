@@ -43,7 +43,7 @@
     "class-validator": "^0.11.0",
     "core-js": "2",
     "firebase": "^7.7.0",
-    "highlight.js": "^9.18.1",
+    "highlight.js": "^10.4.1",
     "highlightjs": "^9.16.2",
     "jwt-decode": "^2.2.0",
     "nuxt": "^2.0.0",
