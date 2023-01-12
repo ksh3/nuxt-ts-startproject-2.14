@@ -40,7 +40,7 @@
     "@types/jest": "^25.1.4",
     "@types/jwt-decode": "^2.2.1",
     "@types/prismjs": "^1.16.0",
-    "class-validator": "^0.11.0",
+    "class-validator": "^0.14.0",
     "core-js": "2",
     "firebase": "^7.7.0",
     "highlight.js": "^9.18.1",
